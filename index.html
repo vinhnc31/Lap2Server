@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-12 text-center">
+        <h1 class="text-danger text-uppercase" style="margin-bottom: 50px">
+          Calculator
+        </h1>
+      </div>
+      <form method="get" action="/calculate">
+        number 1:
+        <input
+          type="number"
+          class="form-control"
+          id="num1"
+          name="num1"
+          placeholder="Nhap So A"
+          required
+        />
+        <br />
+        number 2:
+        <input
+          type="number"
+          class="form-control"
+          id="num2"
+          name="num2"
+          placeholder="Nhap So B:"
+          required
+        />
+        <br />
+
+        phep tinh
+        <select
+          class="form-control"
+          id="operator"
+          name="operator"
+          style="width: 100px"
+        >
+          <option value="cong">+</option>
+          <option value="tru">-</option>
+          <option value="nhan">*</option>
+          <option value="chia">/</option>
+        </select>
+        <input
+          type="submit"
+          class="btn btn-success"
+          style="margin-top: 10px"
+          id="btn_calculate"
+          value="Result"
+        />
+      </form>
+    </div>
+  </body>
+</html>
